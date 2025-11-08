@@ -1,0 +1,12 @@
+*.pyc
+*.pkl
+
+# Ignore checkpoint directories
+checkpoints/
+# Ignore logs
+logs/
+*.log
+# Ignore data files
+data/
+# Ignore certificates
+certs/

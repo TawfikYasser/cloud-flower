@@ -1,0 +1,17 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'flower-server'
+    static_configs:
+      - targets: ['server:9091']
+
+  - job_name: 'flower-clients'
+    static_configs:
+      - targets: 
+          - 'client1:9092'
+          - 'client2:9093'
+
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
